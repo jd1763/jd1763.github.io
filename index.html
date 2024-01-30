@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Jorgeluis Done</title>
+    <link rel ="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d5007b76c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CS Student</p>
+                <h1>Hi, I'm <span>Jorgeluis Done </span><br> Welcome to My Website!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/JorgeluisPic.jpeg" alt="My Picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a junior computer science major at 
+                Rutgers University-New Brunswick. I’m looking for internships opportunities 
+                that can help me improve my technical skills. I have an associate's degree 
+                in computer science from Middlesex College and I’m currently working towards 
+                a bachelor’s degree. As a first-generation college student and immigrant, I 
+                have had to experience working a full-time job to support myself while being 
+                a full-time college student. I always hold myself to a very high standard 
+                regarding responsibilities and reliability. I will always strive for greatness 
+                and will continue to be eager to keep learning every day. Thank you for checking 
+                out my website.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-tab" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class ="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programing Languages</span><br>Java, R, C, JavaScript, HTML, CSS</li>
+                        <li><span>Applications</span><br>VS Code, Eclipse, RStudio, Microsoft Office suite (Excel, PowerPoint, Word)</li>
+                        <li><span>Languages</span><br>English fluency, Spanish fluency</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Present</span><br>Team Member Trainer at Target Corporation</li>
+                        <li><span>2020 - 2021</span><br>Cook at McDonalds</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2025</span><br>Rutgers-New Brunswick</li>
+                        <li><span>2021 - 2023</span><br>Middlesex County College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------Service------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As a college student with a deep passion for web design, I bring a 
+                unique blend of creativity and technical expertise to elevate your online 
+                presence. From crafting sleek user interfaces to designing visually stunning 
+                websites, my goal is to create an immersive digital experience that resonates 
+                with your audience. Let's work together to transform your vision into a standout 
+                online reality, leaving a lasting impression on visitors.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Dive into a world where user interaction meets captivating aesthetics. 
+                With a strong commitment to both User Interface (UI) and User Experience 
+                (UX) design, I offer personalized services to enhance your digital platforms. 
+                From intuitive interfaces to ensuring a seamless user journey, let's collaborate 
+                to create a digital experience that goes beyond the ordinary. Elevate your online 
+                presence and leave a lasting impression on your audience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Embark on a journey of innovation with personalized app design services 
+                tailored to your unique vision. As a dedicated computer science student, my 
+                expertise extends to crafting visually appealing and user-friendly applications. 
+                From conceptualization to execution, let's collaborate to develop an app that not 
+                only meets but exceeds user expectations, leaving a lasting impact in the digital 
+                realm.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------Portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <h1 class="sub">Coming Soon!</h1>
+                <p>This section is still being worked on. Sorry for the inconvenience.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------Contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> Jd1763@scarletmail.rutgers.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i> 848-203-5238</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jorgeluis-done-202ba528b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/pullup.jorge/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © JorgeluisWeb. Made by Jorgeluis Done</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVaWOYt3TMrpPpMx7ES1f3oairy3fA4IEmT3aKUK5UPfXiVvlBjyqTpMRDr6gP43Pk/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
